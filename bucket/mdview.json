@@ -14,5 +14,6 @@
     },
     "uninstaller": {
         "script": "Start-Process \"$dir\\setup.exe\" -ArgumentList '/UNINSTALL','/S' -Wait"
-    }
+    },
+    "env_add_path": "$env:LOCALAPPDATA\\mdview"
 }
