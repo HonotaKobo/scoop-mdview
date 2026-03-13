@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/HonotaKobo/mdview/releases/download/v0.1.0/mdview_0.1.0_x64_en-US.msi",
-            "hash": "8ee85c4b906d8a13254f1573e7a51f74f329e2cb2ce5f8dd8c08daedf97d9f5c"
+            "hash": "b921a50a724cb269bacb8a7dfbf3510988558a543abe309437bfae828b0adb5d"
         }
     },
     "extract_dir": "mdview",
