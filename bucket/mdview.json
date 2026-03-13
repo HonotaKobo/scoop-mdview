@@ -1,17 +1,18 @@
 {
     "version": "0.1.0",
-    "description": "Markdown viewer for the AI age",
+    "description": "Markdown viewer with live preview",
     "homepage": "https://github.com/HonotaKobo/mdview",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HonotaKobo/mdview/releases/download/v0.1.0/mdview_0.1.0_x64_en-US.msi",
-            "hash": "b921a50a724cb269bacb8a7dfbf3510988558a543abe309437bfae828b0adb5d"
+            "url": "https://github.com/HonotaKobo/mdview/releases/download/v0.1.0/mdview_0.1.0_x64-setup.exe#/setup.exe",
+            "hash": "92403f618a12986e5dc6afd4117f8b370c2d9d8d55ade3cdcc5f633b8ce8876a"
         }
     },
-    "extract_dir": "mdview",
-    "bin": "mdview.exe",
-    "shortcuts": [
-        ["mdview.exe", "mdview"]
-    ]
+    "installer": {
+        "script": "Start-Process \"$dir\\setup.exe\" -ArgumentList '/S' -Wait"
+    },
+    "uninstaller": {
+        "script": "Start-Process \"$dir\\setup.exe\" -ArgumentList '/UNINSTALL','/S' -Wait"
+    }
 }
