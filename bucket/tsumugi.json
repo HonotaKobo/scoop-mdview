@@ -1,12 +1,12 @@
 {
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "Markdown viewer for the AI age",
     "homepage": "https://github.com/HonotaKobo/tsumugi",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HonotaKobo/tsumugi/releases/download/v0.3.0/tsumugi_0.3.0_x64-setup.exe#/setup.exe",
-            "hash": "779e51b95974180d710d271d84a8219e9e83805e79fc535820e01688f893bdd6"
+            "url": "https://github.com/HonotaKobo/tsumugi/releases/download/v0.3.1/tsumugi_0.3.1_x64-setup.exe#/setup.exe",
+            "hash": "47b692768060a78b4ace69b0926412732dd9e65819592692ec1ebd57941efede"
         }
     },
     "installer": {
