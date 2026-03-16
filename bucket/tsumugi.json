@@ -1,22 +1,22 @@
 {
-    "version": "0.2.20",
+    "version": "0.3.0",
     "description": "Markdown viewer for the AI age",
-    "homepage": "https://github.com/HonotaKobo/mdcast",
+    "homepage": "https://github.com/HonotaKobo/tsumugi",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HonotaKobo/mdcast/releases/download/v0.2.20/mdcast_0.2.20_x64-setup.exe#/setup.exe",
-            "hash": "c56f68da418adca56c96a68c20fa3119df36e0a6331977503679ae90f3363bd8"
+            "url": "https://github.com/HonotaKobo/tsumugi/releases/download/v0.3.0/tsumugi_0.3.0_x64-setup.exe#/setup.exe",
+            "hash": "779e51b95974180d710d271d84a8219e9e83805e79fc535820e01688f893bdd6"
         }
     },
     "installer": {
         "script": [
             "Start-Process \"$dir\\setup.exe\" -ArgumentList '/S' -Wait",
-            "Copy-Item \"$env:LOCALAPPDATA\\mdcast\\mdcast.exe\" \"$dir\\mdcast.exe\""
+            "Copy-Item \"$env:LOCALAPPDATA\\tsumugi\\tsumugi.exe\" \"$dir\\tsumugi.exe\""
         ]
     },
     "uninstaller": {
         "script": "Start-Process \"$dir\\setup.exe\" -ArgumentList '/UNINSTALL','/S' -Wait"
     },
-    "bin": "mdcast.exe"
+    "bin": "tsumugi.exe"
 }
